@@ -2,12 +2,14 @@ name: Run Jest testing suite
 on:
   workflow_dispatch:
   workflow_run:
-    workflows: ["Build"]
+    workflows: ["Knip"]
     types:
       - completed
 
 env:
   NODE_ENV: "test"
+  SUPABASE_URL: "http://127.0.0.1:54321"
+  SUPABASE_KEY: "key"
 
 jobs:
   testing:

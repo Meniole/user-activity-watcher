@@ -21,8 +21,7 @@
               "type": "string"
             }
           }
-        },
-        "required": ["optOut"]
+        }
       },
       "disqualification": {
         "default": "7 days",
@@ -35,7 +34,6 @@
           "type": "string"
         }
       }
-    },
-    "required": ["warning", "watch", "disqualification", "eventWhitelist"]
+    }
   }
 }
